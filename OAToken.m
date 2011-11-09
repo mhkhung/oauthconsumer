@@ -40,6 +40,7 @@
 @implementation OAToken
 
 @synthesize key, secret, session, duration, verifier, attributes, forRenewal;
+@synthesize pin;
 
 #pragma mark init
 

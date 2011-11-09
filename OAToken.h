@@ -27,6 +27,7 @@
 
 @interface OAToken : NSObject <NSCoding> {
 @protected
+    NSString *pin;
 	NSString *key;
 	NSString *secret;
 	NSString *session;
@@ -36,6 +37,7 @@
 	BOOL renewable;
 	BOOL forRenewal;
 }
+@property(retain) NSString *pin;
 @property(retain, readwrite) NSString *key;
 @property(retain, readwrite) NSString *secret;
 @property(retain, readwrite) NSString *session;
